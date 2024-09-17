@@ -68,8 +68,8 @@ export const DATA = {
       location: 'Pune, Maharashtra, India',
       title: 'Software Consultant',
       logoUrl: '/medline.svg',
-      start: 'October 2023',
-      end: 'November 2024',
+      start: 'Oct 2023',
+      end: 'Nov 2024',
       description: `Software consultant at medline, manufacturer, distributor of medical supplies providing products, clinical services and operations across 125 countries and ranked #15 on the Forbes 2022.Foundational team member who developed business-critical feature, including a patients-per-day census management system that improved billing evaluation accuracy and reduced processing hands-on effort. Used NextJS, webpack-module-federation, Styled-components and more to build performant micro-frontend applications.`,
     },
     {
@@ -79,8 +79,8 @@ export const DATA = {
       location: 'Santa Clara, CA',
       title: 'Software Engineer',
       logoUrl: '/growfin-logo.webp',
-      start: 'March 2023',
-      end: 'October 2020',
+      start: 'Mar 2023',
+      end: 'Oct 2023',
       description: `Account receivable automation Software for accelerating cash inflow and reduce DSO. Core member of innovative accounts receivable B2B software with active thousands of users, purpose-built for streamlining and automating the receivables process across teams. Developed strategies for automated email delivery, resulting increase in efficiency, and optimised the rich text editor to improve email/template management. Used ReactJS, Typescript, react-query, Redux-toolkit, Springboot/Java.`,
     },
     {
@@ -90,8 +90,8 @@ export const DATA = {
       location: 'San Jose, CA',
       title: 'Frontend Developer',
       logoUrl: '/turbolab.jpeg',
-      start: 'February 2021',
-      end: 'March 2023',
+      start: 'Feb 2021',
+      end: 'Mar 2023',
       description: `Introduced team practices that helped us move faster, such as Pair Reviews and Stop and Fix. Organised and led weekly learning sessions where knowledge is shared. Documented usage of performance APIs in React, which increased the code quality. Helped with organisational tasks such as moderating our monthly UI Dev meeting.`,
     },
   ],
@@ -105,12 +105,13 @@ export const DATA = {
       end: '2025',
     },
     {
-      school: 'Open Source Society University',
+      school: 'OSSU',
       href: 'https://github.com/ossu',
-      degree: "Bachelor's Degree of Computer Science (BCS)",
+      degree:
+        "Bachelor's Degree of Computer Science (BCS) Open Source Society University",
       logoUrl: '/ossu.jpeg',
-      start: '2023',
-      end: '2020',
+      start: '2020',
+      end: '2023',
     },
     {
       school: 'Calicut University',
@@ -148,7 +149,7 @@ export const DATA = {
     {
       title: 'Intell',
       href: 'https://intell.me/',
-      dates: 'April 2021 - May 2023',
+      dates: 'Apr 2021 - May 2023',
       active: true,
       description:
         'A business intelligence solution that can be rapidly deployed within days to provide tangible benefits and actionable insights immediately. Intell will find business intelligence for you and deliver just the relevant ones to your inbox daily.',
@@ -166,7 +167,7 @@ export const DATA = {
     {
       title: 'slice-me',
       href: 'https://epic-ride-dda931.netlify.app/',
-      dates: 'April 2020 - September 2023',
+      dates: 'Apr 2020 - Sep 2023',
       active: true,
       description:
         'An SSG powered landing screen for restuarant built using gatsby.',
@@ -195,7 +196,7 @@ export const DATA = {
     {
       title: 'NA Tours',
       href: 'https://ecstatic-carson-45cb80.netlify.app/',
-      dates: 'April 2023 - March 2024',
+      dates: 'Apr 2023 - Mar 2024',
       active: true,
       description:
         'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
