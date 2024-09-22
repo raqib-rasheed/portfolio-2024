@@ -1,0 +1,70 @@
+---
+title: 'Understanding Micro Frontends: Decoupling for Scalability'
+publishedAt: '2024-09-22'
+---
+
+Micro frontends represent a paradigm shift in how we architect web applications, allowing developers to **split** or decouple a single application into multiple self-contained systems. This approach enhances flexibility, maintainability, and scalability.
+
+### Types of Micro Frontend Splits
+
+Micro frontends can be classified into two primary types:
+
+#### 1\. Vertical Split
+
+In a vertical split, an application is divided into multiple fully-fledged applications, each accessible at a different URL. This allows each segment to be developed, deployed, and maintained independently.
+
+#### 2\. Horizontal Split
+
+The horizontal split involves mixing components developed, released, and deployed by independent teams, all integrated into a single application route or view. This enables collaborative development while maintaining a cohesive user experience.
+
+### Variations of Micro Frontends
+
+Micro frontends can be integrated using several techniques:
+
+- **Server-side template composition**
+
+- **Build-time integration**
+
+- **Run-time integration via iframes**
+
+- **Run-time integration via JavaScript**
+
+- **Run-time integration via Web Components**
+
+### Frameworks for Micro Frontends
+
+Several frameworks facilitate the implementation of micro frontends, including:
+
+- **Module Federation**
+
+- **Next.js Zone**
+
+- [**Composable Components**](https://bit.dev/docs/quick-start/) by Bit
+
+- **single-spa**
+
+### Webpack Module Federation: A Dynamic Approach
+
+Webpack Module Federation allows JavaScript applications to dynamically load code from another application, enabling both container and host functionalities. This addresses a key limitation of traditional code splitting, which often relies on static imports.
+
+For instance, consider an organization, _abc_, maintaining a Modal package for their projects. When updates are made to the Modal, the consuming application must update its version and rebuild to access the changes. Module Federation allows for on-demand loading of these updates, streamlining the process.
+
+### Considerations and Future Directions
+
+While exploring Micro Frontends with Module Federation, several points warrant further investigation:
+
+- **Strong Typing**: Implementing strong typing between remotes using the **webpack-module-federation-types-plugin** could improve type safety. A proof of concept (POC) is recommended.
+
+- **Transitioning to Micro Frontends**: Determine the right moment to transition from a monolithic architecture to Micro Frontends.
+
+- **Testing Strategies**: Establishing testing protocols for host applications containing remote items, including a POC for Jest configuration with and without TypeScript (e.g., RazorpayX).
+
+- **Microservices Integration**: Explore communication patterns when integrating Micro Frontends with microservices.
+
+- **Style Guides and Pattern Labs**: Establishing a cohesive style guide and utilizing pattern labs can help maintain design consistency across micro frontends.
+
+### Conclusion
+
+Micro frontends offer a promising way to enhance the scalability and flexibility of web applications. As we continue to investigate the capabilities of tools like Webpack Module Federation and explore the best practices for implementation, the potential for innovation in web development grows.
+
+What are your thoughts on Micro Frontends? Have you worked with Module Federation or similar technologies? Share your experiences in the comments!
