@@ -62,6 +62,17 @@ export const DATA = {
 
   work: [
     {
+      company: 'Deloitte',
+      badges: [],
+      href: 'https://www2.deloitte.com/in/en.html',
+      location: 'Hyderabad, Telangana, India',
+      title: 'Senior Team Lead',
+      logoUrl: '/deloitte.png',
+      start: 'Oct 2024',
+      end: 'Present',
+      description: `Senior Team Lead at Deloitte, A leading global provider of audit and assurance, consulting, financial advisory, risk advisory, tax, and related services. With more than 175 years of commitment for making a real difference, organization has grown in 150 countries and territories, providing quality services.`,
+    },
+    {
       company: 'Medline India',
       badges: [],
       href: 'https://www.medline.com/',
