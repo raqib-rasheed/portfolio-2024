@@ -1,0 +1,93 @@
+---
+title: 'Understanding Loops vs Functions and Their Syntax'
+publishedAt: '2025-11-08'
+summary: 'A simple guide explaining how JavaScript loops differ from functions, how for loops accept different statements, with comparisons in Python and Go.'
+---
+
+**Loops** and **functions** serve different purposes, and it's important to understand their differences and how `for` loop syntax works. This guide explains these concepts simply and compares them with JavaScript, Python and Go for clarity.
+
+## What is a JavaScript Loop?
+
+A loop runs the same block of code multiple times based on conditions. It _automatically_ repeats until the condition is false.
+
+### Example: JavaScript `for` loop
+
+for (let i = 0; i < 5; i++) {
+console.log(i);
+}
+
+- **Initialization**: `let i = 0` — sets the loop variable before starting.
+- **Condition**: `i < 5` — loop runs while this is true.
+- **Update**: `i++` — runs after each iteration to change the variable.
+
+The three parts go inside the parentheses `()` separated by semicolons.
+
+## What is a JavaScript Function?
+
+A function is a _reusable block of code_ that you call explicitly to run once.
+
+### Example: JavaScript function
+
+function greet(name) {
+console.log('Hello, ' + name);
+}
+
+greet('Alice'); // Call function
+
+Unlike loops, functions do not repeat automatically; they run once per call.
+
+---
+
+## Why does the `for` loop accept three statements in parentheses?
+
+JavaScript's `for` loop syntax combines initialization, condition, and update all in one place within the parentheses for concise control of the loop behavior:
+
+- Initialization sets up the loop variable.
+- Condition checks if the loop should continue.
+- Update changes the loop variable each time.
+
+This integrated syntax helps keep loop control clean and readable.
+
+---
+
+## How does this compare in Python and Go?
+
+### Python
+
+Python's `for` loop looks different and simpler. It _iterates_ over items in a sequence (like numbers in a range):
+
+for i in range(5):
+print(i)
+
+- No need to explicitly write initialization, condition, or update.
+- `range(5)` generates numbers from 0 to 4 automatically.
+
+### Go
+
+Go’s `for` loop is very similar to JavaScript's with explicit control parts:
+
+for i := 0; i < 5; i++ {
+fmt.Println(i)
+}
+
+- `i := 0`: initialization
+- `i < 5`: condition
+- `i++`: update
+- Uses curly braces like JavaScript
+
+---
+
+## Summary Table
+
+| Concept          | JavaScript Loop                  | JavaScript Function       | Python Loop                 | Go Loop                          |
+| ---------------- | -------------------------------- | ------------------------- | --------------------------- | -------------------------------- |
+| Purpose          | Repeat code automatically        | Run reusable code on call | Iterate over items          | Repeat code automatically        |
+| Syntax style     | `for(init; cond; update)`        | `function name(...) {}`   | `for var in range()`        | `for init; cond; post`           |
+| Loop control     | Explicit init, condition, update | No loop, runs once        | Implicit loop over sequence | Explicit init, condition, update |
+| Block delimiters | Curly braces `{}`                | Curly braces `{}`         | Indentation                 | Curly braces `{}`                |
+
+---
+
+This guide explains the difference between loops and functions in JavaScript, why the `for` loop has three statements in parentheses, and shows similar loops in Python and Go to help you understand these concepts better.
+
+Happy coding!
